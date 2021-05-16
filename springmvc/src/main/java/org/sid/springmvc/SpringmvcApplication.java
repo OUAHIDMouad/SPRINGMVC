@@ -21,9 +21,9 @@ public class SpringmvcApplication implements CommandLineRunner {
 	@Override
 	public void run(String... args) throws Exception {
 		// TODO Auto-generated method stub
-		patientRepository.save(new Patient(null,"Hassan",new Date(),false));
-		patientRepository.save(new Patient(null,"Mohamed",new Date(),false));
-		patientRepository.save(new Patient(null,"Samira",new Date(),false));
+		//patientRepository.save(new Patient(null,"Hassan",new Date(),false,5));
+		//patientRepository.save(new Patient(null,"Mohamed",new Date(),false,7));
+		//patientRepository.save(new Patient(null,"Samira",new Date(),false,10));
 		
 		patientRepository.findAll().forEach(p->{
 			System.out.println(p.getName());

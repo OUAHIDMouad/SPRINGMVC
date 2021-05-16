@@ -1,15 +1,18 @@
 <!DOCTYPE html>
 <html xmlns:th="http://www.thymleaf.org"
 	  xmlns:layout="http://www.ultraq.net.nz/thymeleaf/layout"
+	  xmlns:sec="https://www.thymeleaf.org/thymeleaf-extras-springsecurity5"
 	  layout:decorator="template1"
 >
 <head>
 <meta charset="utf-8">
-<title>Page Index</title>
+<title>ERROR</title>
 </head>
 <body>
 	<div layout:fragment="pageContent">
-		<h3>Test Index</h3>
+		<div class="container mt-5">
+			<h3 class="text-danger">Vous n'êtes pas autorisé</h3>
+		</div>
 	</div>
 </body>
 </html>
